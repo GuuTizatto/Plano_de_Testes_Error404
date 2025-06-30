@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Testes</title>
+</head>
+<body>
+    <h2>Plano de Backup</h2>
+
+    <p>Frequência de Backup: Incremental a cada 1 hora e backup completo aos domingos, às 00h</p>
+    <p>Forma de Backup: backup incremental e completo automáticos </p>
+    <p>Ferramentea de backup sugerido: por ser um sistema ERP terá a opção do cliente armazenar seu backup no dropbox
+    ou google drive, com o e-mail de sua empresa. Além deste, o backup será armazenado em um servidor da Synology NAS.</p>
+    <p>No backup será salvo todos os dados do banco de dados e configurações gerais do sistema. </p>
+    
+    <h2>Plano de Recuperação</h2>
+    <p>Etapa 1: Verificar se a perda de dados ocorreu por algum fator do usuário, falha do sistema ou ataque hacker</p>
+    <h3>Etapa 1.2: Em caso de erro do usuário seguir as seguintes etapas:</h3>
+    <p>1.2.1: </p>
+
+    <p>-Verificar o que foi excluido.</p>
+
+    <p>-Em caso de perda pequena de dados, verificar se o usuário 
+        possuí algum backup válido em seu google drive/dropbox, caso sim, retirar o acesso da empresa ao sistema e realizar a 
+        restauração do mesmo.
+    </p>
+    <p>-Analisar se todos os dados voltaram.</p>
+
+    <h3>Etapa 1.3: Em caso da falha ser do sistema: </h3>
+    <p>1.3.1: </p>
+    <p>-Contatar a equipe de testes e desenvolvimento para validar a situação</p>
+    <p>-Retirar o sistema do ar</p>
+    <p>-Avisar os usuários que ocorreram erros técnicos</p>
+    <p>-Entrar em contato com os responsáveis pelo servidor Synology NAS para ter acesso à um backup</p>
+    <p>-Restaurar o backup mais recente aonde este erro não ocorre</p>
+    <p>-Voltar o sistema para o ar </p>
+    <p>-Trabalhar com o desenvolvimento para corrigir a questão</p>
+    <p>-Realizar os testes necessários</p>
+    <p>-Lançar um update para correção da situação</p>
+
+    <h3>Etapa 1.4: Em caso de ataque Hacker:</h3>
+    <p>1.4.1</p>
+    <p>-Conter o Malware junto com a equipe de segurança do banco de dados, realizando uma varredura completa e derrubando o sistema</p>
+    <p>-Avisar os clientes sobre a situação</p>
+    <p>-Analisar o que foi perdido e entrar em contato com os responsáveis pelo servidor Synology NAS para pegar o backup mais recente</p>
+    <p>-Após verificar que o Malware foi removido, realizar o processo de restauração do backup</p>
+    <p>-Realizar os testes para verificar se os dados estão ok e se o sistema está funcionando corretamente</p>
+    <p>-Retornar o sistema para o ar</p>
+    
+    <h3>Quanto tempo o sistema ficaria indisponível?</h3>
+    <p>Problemas mais simples: 30 min</p>
+    <p>Falhas de Sistema: 45 min</p>
+    <p>Ataques Hackers: 2 a 8 horas</p>
+
+    <h3>Como garantir a integridade dos dados?</h3>
+    <p>Treinar os clientes, mostrando como realizar os backups e a importância de manter eles também em seus drives</p>
+    <p>Ter uma equipe responsável por verificar se os backups que vão para o servidor Synology NAS estão sendo feitos corretamente</p>
+    <p>Ter responsáveis por manter a integridade do servidor</p>
+    <p>Realizar testes de backups diários</p>
+    
+</body>
+</html>
