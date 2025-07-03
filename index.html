@@ -62,7 +62,7 @@
           <td>CT-004</td>
           <td>Feedback de erro </td>
           <td class="text-end" style="padding-right: 70px;">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
               Detalhes
             </button>
           </td>
@@ -74,7 +74,7 @@
           <td>CT-005</td>
           <td>Tempo de expiração da sessão </td>
           <td class="text-end" style="padding-right: 70px;">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">
               Detalhes
             </button>
           </td>
@@ -86,7 +86,7 @@
           <td>CT-006</td>
           <td>Garantir que o sistema não aceite submissões com campos obrigatórios vazios.</td>
           <td class="text-end" style="padding-right: 70px;">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">
               Detalhes
             </button>
           </td>
@@ -98,7 +98,7 @@
           <td>CT-007</td>
           <td>Impedimento de inserções com caracteres não permitidos.</td>
           <td class="text-end" style="padding-right: 70px;">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal7">
               Detalhes
             </button>
           </td>
@@ -110,7 +110,7 @@
           <td>CT-008</td>
           <td>Cadastro de novo usuário com sucesso</td>
           <td class="text-end" style="padding-right: 70px;">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal8">
               Detalhes
             </button>
           </td>
@@ -122,7 +122,7 @@
           <td>CT-009</td>
           <td>Verificação de compatibilidade com navegadores</td>
           <td class="text-end" style="padding-right: 70px;">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9">
               Detalhes
             </button>
           </td>
@@ -134,7 +134,7 @@
           <td>CT-010</td>
           <td>Verificação do encerramento de sessão via logout</td>
           <td class="text-end" style="padding-right: 70px;">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal10">
               Detalhes
             </button>
           </td>
@@ -221,6 +221,133 @@
           <p><strong>Resultado esperado:</strong> Sistema bloquear e informar que o cliente já existe</p>
           <p><strong>Resultado obtido :</strong> Sistema solicitou se gostaria de criar um novo cadastro ou utilizar já existente.</p>
           <p><strong>Status (Aprovado / Reprovado):</strong> Aprovado </p>
+          <!-- Adicione mais informações conforme necessário -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 5 -->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalhes do Teste - CT-005</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objetivo do teste:</strong> Verifica se sessões inativas são encerradas automaticamente.</p>
+          <p><strong>Funcionalidade testada:</strong> Esperar até 15 minutos para verificar se a seção irá encerar sozinho</p>
+          <p><strong>Passos para execução:</strong> <br>1 - Abrir o sistema e deixar na tela inicial<br><br> 2 - Abrir outro site e aguardar 15 minutos <br><br> 3 - Retornar e verificar se o sistema encerrou sozinho</p>
+          <p><strong>Resultado esperado:</strong> Sistema irá solicitar login novamente</p>
+          <p><strong>Resultado obtido :</strong> Sistema não expirou a sessão e continuou a operar normalmente <br><br>(Pode depender do uso de memória RAM utilizada).</p>
+          <p><strong>Status (Aprovado / Reprovado):</strong> Reprovado (eu acho)</p>
+          <!-- Adicione mais informações conforme necessário -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 6 -->
+  <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalhes do Teste - CT-006</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objetivo do teste:</strong> Garantir que o sistema não deixa ir adiante com o campo obrigatório em branco.</p>
+          <p><strong>Funcionalidade testada:</strong> Campos Obrigatórios</p>
+          <p><strong>Passos para execução:</strong> <br>1 - Fiz o prrenchimento do cadastro no sistema;<br><br> 2 - Deixei alguns campos obrigátórios em branco; <br><br> 3 - Fiz a tentativa de submeter a inscrição.</p>
+          <p><strong>Resultado esperado:</strong> Que o sistema não aceitasse o cadastro com campos obrigatórios em branco</p>
+          <p><strong>Resultado obtido :</strong> O sistema não me deixou concluir o cadastro enquanto eu não preenchesse os campos obrigatórios.</p>
+          <p><strong>Status (Aprovado / Reprovado):</strong> Aprovado</p>
+          <!-- Adicione mais informações conforme necessário -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 7 -->
+  <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalhes do Teste - CT-007</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objetivo do teste:</strong> Testar se o sistema aceita quando é digitado um caractere não permitido em um campo. <br><br> (ex: Inserir letras do alfabeto em um campo que só aceita números inteiros)</p>
+          <p><strong>Funcionalidade testada:</strong> Restrições de caracteres</p>
+          <p><strong>Passos para execução:</strong> <br>1 - Tentei lançar o estoque de um produto;<br><br> 2 - Digitei números, pois só aceitava quantidade em números; <br><br> 3 - Tentei digitar letras junto aos números e o sistema não inseriu as letras.</p>
+          <p><strong>Resultado esperado:</strong> Aceitar somente a inserção de caracteres definidos em cada campo.</p>
+          <p><strong>Resultado obtido :</strong> O sistema não aceita que seja digitado nos campos os caracteres que não estavam atribuidos ao mesmo.</p>
+          <p><strong>Status (Aprovado / Reprovado):</strong> Aprovado</p>
+          <!-- Adicione mais informações conforme necessário -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 8 -->
+  <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalhes do Teste - CT-008</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objetivo do teste:</strong> Verificar se o sistema permite o cadastro de um novo usuário sem apresentar erros ou impedimentos.</p>
+          <p><strong>Funcionalidade testada:</strong> Módulo de cadastro de usuários</p>
+          <p><strong>Passos para execução:</strong> <br>1 - Acessar o sistema<br><br> 2 - Navegar até a tela de cadastro de usuário <br><br> 3 - Preencher todos os campos obrigatórios com dados válidos.<br><br> 4 - Clicar no botão "Cadastrar".</p>
+          <p><strong>Resultado esperado:</strong>  O sistema deve cadastrar o novo usuário com sucesso e exibir uma mensagem de confirmação.</p>
+          <p><strong>Resultado obtido :</strong> Usuário cadastrado com sucesso em ambas as tentativas, sem erros ou impedimentos.</p>
+          <p><strong>Status (Aprovado / Reprovado):</strong> Aprovado</p>
+          <p><strong>Observações:</strong> Teste executado duas vezes com sucesso, confirmando a estabilidade da funcionalidade</p>
+          <!-- Adicione mais informações conforme necessário -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 9 -->
+  <div class="modal fade" id="modal9" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalhes do Teste - CT-009</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objetivo do teste:</strong> Garantir que o sistema funcione corretamente nos principais navegadores utilizados pelos usuários.</p>
+          <p><strong>Funcionalidade testada:</strong> Interface e funcionalidades gerais do sistema em diferentes navegadores</p>
+          <p><strong>Passos para execução:</strong> <br>1 - Acessar o sistema utilizando o navegador Google Chrome<br><br> 2 - Repetir o acesso utilizando o Mozilla Firefox <br><br> 3 - Repetir o acesso utilizando o Microsoft Edge.<br><br> 4 - Navegar pelas principais funcionalidades e realizar operações básicas.</p>
+          <p><strong>Resultado esperado:</strong>  O sistema deve funcionar corretamente em todos os navegadores testados, sem falhas de layout ou funcionalidade.</p>
+          <p><strong>Resultado obtido :</strong> Sistema funcionou conforme esperado nos navegadores Chrome, Firefox e Edge, sem apresentar falhas.</p>
+          <p><strong>Status (Aprovado / Reprovado):</strong> Aprovado</p>
+          <!-- Adicione mais informações conforme necessário -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- MODAL 10 -->
+  <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detalhes do Teste - CT-010</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Objetivo do teste:</strong> Confirmar que o logout encerra corretamente a sessão do usuário e impede o acesso não autorizado após o encerramento.</p>
+          <p><strong>Funcionalidade testada:</strong> Mecanismo de logout do sistema.</p>
+          <p><strong>Passos para execução:</strong> <br>1 - Acessar o sistema com um usuário válido<br><br> 2 - Navegar por algumas funcionalidades <br><br> 3 - Clicar na opção "Logout" ou "Sair".<br><br> 4 - Retornou à tela de login.</p>
+          <p><strong>Resultado esperado:</strong> A sessão deve ser encerrada corretamente e o sistema deve redirecionar para a tela de login, impedindo o acesso sem nova autenticação.</p>
+          <p><strong>Resultado obtido :</strong>Logout executado com sucesso, sessão encerrada corretamente e acesso bloqueado após tentativa de retorno.</p>
+          <p><strong>Status (Aprovado / Reprovado):</strong> Aprovado</p>
           <!-- Adicione mais informações conforme necessário -->
         </div>
       </div>
